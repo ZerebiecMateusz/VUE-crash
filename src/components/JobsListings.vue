@@ -2,6 +2,7 @@
 import { ref, computed, onMounted, reactive } from 'vue';
 import { RouterLink } from 'vue-router';
 import axios from 'axios';
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
 const jobs = ref([]);
 
 const toggleDescription = (job) => {
@@ -22,7 +23,7 @@ const state = reactive({
 
 onMounted(async () => {
   try {
-    const response = await axios.get('http://localhost:8000/jobs');
+    const response = await axios.get('/api/jobs');
     state.jobs = response.data.map(job => ({ ...job, showFull: false }));
   } catch (error) {
     console.error('Error fetching jobs:', error);
@@ -38,6 +39,10 @@ onMounted(async () => {
             <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">
                 Browse Jobs
             </h2>
+            <!-- Show loading spinner -->
+            <div v-if="state.isLoading" class="flex justify-center items-center h-64">
+                <PulseLoader :loading="state.isLoading" color="#38a169" size="15px" />
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div v-for="job in state.jobs" :key="job.title" class="bg-white p-6 rounded-lg shadow-md">
                     <h2>{{ job.type }}</h2>
@@ -55,7 +60,7 @@ onMounted(async () => {
                         location:  {{ job.location }}</h3>
                     <hr>
                     <h3 class="text-green-700 mb-2">{{ job.salaryRange.from }} - {{ job.salaryRange.to }} {{ job.salaryRange.currency }}</h3>
-                    <RouterLink :to="job.url" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+                    <RouterLink :to="`/jobs/${job.id}`"  class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
                         Apply Now
                     </RouterLink>
                 </div>
