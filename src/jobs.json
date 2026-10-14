@@ -9,7 +9,11 @@
       "type": "full-time",
       "posted": "2015-01-20",
       "location": "US",
-      "skills": ["Python", "Javascript", "Redis"],
+      "skills": [
+        "Python",
+        "Javascript",
+        "Redis"
+      ],
       "salaryRange": {
         "from": 90000,
         "to": 100000,
@@ -19,7 +23,10 @@
         "from": 0.005,
         "to": 0.01
       },
-      "perks": ["free food", "gym membership"],
+      "perks": [
+        "free food",
+        "gym membership"
+      ],
       "apply": "http://piedpiper.com/jobs/backend-developer/apply",
       "company": {
         "name": "Pied Piper",
@@ -38,7 +45,11 @@
       "type": "full-time",
       "posted": "2015-01-20",
       "location": "US",
-      "skills": ["Javascript", "Angular.js", "CSS"],
+      "skills": [
+        "Javascript",
+        "Angular.js",
+        "CSS"
+      ],
       "salaryRange": {
         "from": 90000,
         "to": 100000,
@@ -48,37 +59,11 @@
         "from": 0.005,
         "to": 0.01
       },
-      "perks": ["free food", "gym membership"],
+      "perks": [
+        "free food",
+        "gym membership"
+      ],
       "apply": "http://piedpiper.com/jobs/frontend-developer/apply",
-      "company": {
-        "name": "Pied Piper",
-        "url": "http://piedpiper.com/",
-        "remoteFriendly": true,
-        "market": "SaaS",
-        "size": "10-50"
-      }
-    },
-    {
-      "id": "3",
-      "position": "UI/UX Designer",
-      "title": "UX Designer",
-      "description": "You will help us design dashboard for our compression infrastructure. Designing systems: Planning how software applications and databases will work together.Writing code: Using programming languages like Python, Java, or C++ to build features.Testing and debugging: Finding errors in programs and fixing them so the software runs smoothly.Collaborating: Working with product managers, designers, and other engineers in daily meetings.Documenting: Writing clear guides and instructions on how the software works.",
-      "url": "http://piedpiper.com/jobs/ux-designer",
-      "type": "full-time",
-      "posted": "2015-01-20",
-      "location": "US",
-      "skills": ["HTML", "CSS", "Photoshop"],
-      "salaryRange": {
-        "from": 90000,
-        "to": 100000,
-        "currency": "USD"
-      },
-      "equity": {
-        "from": 0.005,
-        "to": 0.01
-      },
-      "perks": ["free food", "gym membership"],
-      "apply": "http://piedpiper.com/jobs/ux-designer/apply",
       "company": {
         "name": "Pied Piper",
         "url": "http://piedpiper.com/",
@@ -96,7 +81,11 @@
       "type": "full-time",
       "posted": "2015-01-20",
       "location": "US",
-      "skills": ["Python", "Javascript", "Redis"],
+      "skills": [
+        "Python",
+        "Javascript",
+        "Redis"
+      ],
       "salaryRange": {
         "from": 70000,
         "to": 110000,
@@ -106,7 +95,10 @@
         "from": 0.005,
         "to": 0.01
       },
-      "perks": ["free food", "gym membership"],
+      "perks": [
+        "free food",
+        "gym membership"
+      ],
       "apply": "http://piedpiper.com/jobs/backend-developer/apply",
       "company": {
         "name": "Pied Piper",
@@ -125,7 +117,11 @@
       "type": "full-time",
       "posted": "2015-01-20",
       "location": "US",
-      "skills": ["Javascript", "Angular.js", "CSS"],
+      "skills": [
+        "Javascript",
+        "Angular.js",
+        "CSS"
+      ],
       "salaryRange": {
         "from": 65000,
         "to": 100000,
@@ -135,7 +131,10 @@
         "from": 0.005,
         "to": 0.01
       },
-      "perks": ["free food", "gym membership"],
+      "perks": [
+        "free food",
+        "gym membership"
+      ],
       "apply": "http://piedpiper.com/jobs/frontend-developer/apply",
       "company": {
         "name": "Pied Piper",

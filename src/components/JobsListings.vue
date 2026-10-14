@@ -61,7 +61,7 @@ onMounted(async () => {
                     <hr>
                     <h3 class="text-green-700 mb-2">{{ job.salaryRange.from }} - {{ job.salaryRange.to }} {{ job.salaryRange.currency }}</h3>
                     <RouterLink :to="`/jobs/${job.id}`"  class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-                        Apply Now
+                        Jobs Details
                     </RouterLink>
                 </div>
             </div>
